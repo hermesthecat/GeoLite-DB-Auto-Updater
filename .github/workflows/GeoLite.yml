@@ -41,7 +41,7 @@ jobs:
         git add .
         git commit -m "${{ env.TAG_NAME }}"
         git remote add origin "https://${{ github.actor }}:${{ secrets.GITHU_TOKEN }}@github.com/${{ github.repository }}"
-        git push -f origin master
+        git push -f origin main
 
     - name: Upload to Releases
       uses: softprops/action-gh-release@v1
