@@ -22,7 +22,7 @@ jobs:
     timeout-minutes: 5
 
     steps:
-    - name: Download GeoLite.mmdb
+    - name: Download Repo
       run: |
         git clone https://${{ github.actor }}:${{ secrets.GITHU_TOKEN }}@github.com/${{ github.repository }}
         cd GeoLite-DB-Auto-Updater
