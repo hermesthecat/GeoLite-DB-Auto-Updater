@@ -37,6 +37,7 @@ jobs:
         git clone https://${{ github.actor }}:${{ secrets.GITHU_TOKEN }}@github.com/${{ github.repository }}
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
+        cd GeoLite-DB-Auto-Updater
         git add .
         git commit -m "${{ env.TAG_NAME }}"
         git remote add origin "https://${{ github.actor }}:${{ secrets.GITHU_TOKEN }}@github.com/${{ github.repository }}"
