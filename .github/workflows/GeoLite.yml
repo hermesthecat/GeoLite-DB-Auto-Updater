@@ -1,14 +1,4 @@
-#
-# Copyright (c) 2020-2021 P3TERX <https://p3terx.com>
-#
-# This is free software, licensed under the MIT License.
-# See /LICENSE for more information.
-#
-# https://github.com/P3TERX/GeoLite.mmdb
-# Description: Publish GeoLite.mmdb
-#
-
-name: GeoLite-DB-Auto-Updater
+#name: GeoLite-DB-Auto-Updater
 
 on:
   repository_dispatch:
