@@ -34,7 +34,7 @@ jobs:
     - name: Push to "master" branch
       run: |
         cd upload
-        git clone https://github.com/hermesthecat/GeoLite-DB-Auto-Updater.git
+        git clone https://${{ github.actor }}:${{ secrets.GITHU_TOKEN }}@github.com/${{ github.repository }}
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
         git add .
